@@ -1,0 +1,15 @@
+body{
+    background-color: #FAB2EA
+}
+
+
+.buttons {
+    display:flex;
+    align-items: center;
+    font-family: 'Lobster Two', cursive;
+    background-color: azure;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+

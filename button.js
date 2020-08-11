@@ -1,8 +1,3 @@
-// ADD CODE HERE
-
-
-let state = 1;
-
 let imgButton = document.getElementById('img_button');
 let imgMain = document.getElementById('img_div');
 let pButton = document.getElementById('p_button');
@@ -25,18 +20,6 @@ let gButton = document.getElementById('g_button');
 let gMain = document.getElementById('g_div');
 let hButton = document.getElementById('h_button');
 let hMain = document.getElementById('h_div');
-
-let fDiverse = document.getElementById('fd');
-let sDiverse = document.getElementById('sd');
-let tDiverse = document.getElementById('td');
-let foDiverse = document.getElementById('fod');
-let fiDiverse = document.getElementById('fid');
-
-let fRent = document.getElementById('fr');
-let sRent = document.getElementById('sr');
-let tRent = document.getElementById('tr');
-let foRent = document.getElementById('for');
-let fiRent = document.getElementById('fir');
 
 function onClick(){
     imgMain.style.display = 'block';
@@ -178,101 +161,3 @@ function onClick9(){
 }
 
 hButton.addEventListener('click', onClick9)
-
-
-/*function onClick10(){
-    imgMain.innerHTML = "";
-    pMain.innerHTML = "";
-    aMain.innerHTML = "";
-    bMain.innerHTML = "";
-    cMain.innerHTML = "";
-    dMain.innerHTML = "";
-    eMain.innerHTML = "";
-    fMain.innerHTML = "";
-    gMain.innerHTML = "";
-    hMain.innerHTML = "";
-}
-
-refreshButton.addEventListener('click', onClick10);*/
-
-function onClick11(){
-    fDiverse.innerHTML = "Diversity Score: 71.6 out of 100";
-    setTimeout(function(){ fDiverse.innerHTML = "Houston, TX";}, 10000);
-}
-fDiverse.addEventListener('click', onClick11);
-
-function onClick12(){
-    sDiverse.innerHTML = "Diversity Score: 71.52 out of 100";
-    setTimeout(function(){ sDiverse.innerHTML = "Jersey City, NJ";}, 10000);
-}
-sDiverse.addEventListener('click', onClick12);
-
-function onClick13(){
-    tDiverse.innerHTML = "Diversity Score: 71.47 out of 100";
-    setTimeout(function(){ tDiverse.innerHTML = "New York, NY";}, 10000);
-}
-tDiverse.addEventListener('click', onClick13);
-
-function onClick14(){
-    foDiverse.innerHTML = "Diversity Score: 71.23 out of 100";
-    setTimeout(function(){ foDiverse.innerHTML = "Gaithersburg, MD";}, 10000);
-}
-foDiverse.addEventListener('click', onClick14);
-
-function onClick15(){
-    fiDiverse.innerHTML = "Diversity Score: 71.12 out of 100";
-    setTimeout(function(){ fiDiverse.innerHTML = "Dallas, TX";}, 10000);
-}
-fiDiverse.addEventListener('click', onClick15);
-
-function onClick16(){
-    fRent.innerHTML = "Best Place to Rent Score: 61.97 out of 100";
-    setTimeout(function(){ fRent.innerHTML = "Bismarck, ND";}, 10000);
-}
-fRent.addEventListener('click', onClick16);
-
-function onClick17(){
-    sRent.innerHTML = "Best Place to Rent Score: 57.98 out of 100";
-    setTimeout(function(){ sRent.innerHTML = "Lewiston, ME";}, 10000);
-}
-sRent.addEventListener('click', onClick17);
-
-function onClick18(){
-    tRent.innerHTML = "Best Place to Rent Score: 57.70 out of 100";
-    setTimeout(function(){ tRent.innerHTML = "Lincoln, NE";}, 10000);
-}
-tRent.addEventListener('click', onClick18);
-
-function onClick19(){
-    foRent.innerHTML = "Best Place to Rent Score: 56.89 out of 100";
-    setTimeout(function(){ foRent.innerHTML = "Rapid City, SD";}, 10000);
-}
-foRent.addEventListener('click', onClick19);
-
-function onClick20(){
-    fiRent.innerHTML = "Best Place to Rent Score: 56.81 out of 100";
-    setTimeout(function(){ fiRent.innerHTML = "Sioux Falls, SD";}, 10000);
-}
-fiRent.addEventListener('click', onClick20);
-
-
-function openCity(evt, cityName) {
-    // Declare all variables
-    var i, tabcontent, tablinks;
-  
-    // Get all elements with class="tabcontent" and hide them
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-  
-    // Get all elements with class="tablinks" and remove the class "active"
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-  
-    // Show the current tab, and add an "active" class to the button that opened the tab
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }

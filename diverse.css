@@ -1,3 +1,12 @@
 body {
     background-color: #B5D99C
+    
+    
+}
+
+header {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lemonada', cursive;
+    /* color: rgb(102, 255, 153); */
 }
