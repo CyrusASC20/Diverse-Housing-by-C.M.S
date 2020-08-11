@@ -5,63 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="main.js" defer></script>
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
     <title>Diverse Housing by CMS</title>
 </head>
 <body>
+    <div class="tab">
+        <button class="tablinks" onclick="openCity(event, 'Main')">Main Page</button>
+        <button class="tablinks"><a href="diverse.html">Most Diverse</a></button>
+        <button class="tablinks" onclick="openCity(event, 'Renters')">Best Renters</button>
+        <button class="tablinks" onclick="openCity(event, 'AllButtons')">Buttons</button>
+    </div>
+    <div id="Main" class="tabcontent">
     <h1>Diverse Housing</h1>
     <div class='all'>
-        <div class='diverse'>
-            <h2>Most Diverse Cities</h2>
-            <div id='dLink'>
-                <iframe src="//cdn.wallethub.com/wallethub/embed/12690/geochart-overalldiversity-2018.html" width="325" height="275" frameBorder="0" scrolling="no"></iframe>
-                <div style="width:556px;font-size:12px;color:#888;">Source: <a href="https://wallethub.com/edu/most-diverse-cities/12690/">WalletHub (Most Diverse)</a></div> 
+        <div id="Diverse" class="tabcontent">
+            <div class='diverse'>
+                <h2>Most Diverse Cities</h2>
+                <div id='dLink'>
+                    <iframe src="//cdn.wallethub.com/wallethub/embed/12690/geochart-overalldiversity-2018.html" width="325" height="275" frameBorder="0" scrolling="no"></iframe>
+                    <div style="width:556px;font-size:12px;color:#888;">Source: <a href="https://wallethub.com/edu/most-diverse-cities/12690/">WalletHub (Most Diverse)</a></div> 
+                </div>
+                <h3>Top 5 Most Diverse Places</h3>
+                <li id = "fd">Houston, TX</li>
+                <li id = "sd">Jersey City, NJ</li>
+                <li id = "td">New York, NY</li>
+                <li id = "fod">Gaithersburg, MD</li>
+                <li id = "fid">Dallas, TX</li>
             </div>
-            <h3>Top 5 Most Diverse Places</h3>
-            <li>Houston, TX</li>
-            <li>Jersey City, NJ</li>
-            <li>New York, NY</li>
-            <li>Gaithersburg, MD</li>
-            <li>Dallas, TX</li>
         </div>
-        <div class='rent'>
-            <h2>Best Cities For Renters</h2>
-            <div id='rLink'>
-                <iframe src="//cdn.wallethub.com/wallethub/embed/23010/geochart-renters.html" width="325" height="275" frameBorder="0" scrolling="no"></iframe>
-                <div style="width:556px;font-size:12px;color:#888;">Source: <a href="https://wallethub.com/edu/best-cities-for-renters/23010/">WalletHub (Best Renters)</a></div>
+        <div id="Renters" class="tabcontent">
+            <div class='rent'>
+                <h2>Best Cities For Renters</h2>
+                <div id='rLink'>
+                    <iframe src="//cdn.wallethub.com/wallethub/embed/23010/geochart-renters.html" width="325" height="275" frameBorder="0" scrolling="no"></iframe>
+                    <div style="width:556px;font-size:12px;color:#888;">Source: <a href="https://wallethub.com/edu/best-cities-for-renters/23010/">WalletHub (Best Renters)</a></div>
+                </div>
+                <h3>Top 5 Cheapest Places</h3>
+                <li id = "fr">Bismarck, ND</li>
+                <li id = "sr">Lewiston, ME</li>
+                <li id = "tr">Lincoln, NE</li>
+                <li id = "for">Rapid City, SD</li>
+                <li id = "fir">Sioux Falls, SD</li>
             </div>
-            <h3>Top 5 Cheapest Places</h3>
-            <li>Bismarck, ND</li>
-            <li>Lewiston, ME</li>
-            <li>Lincoln, NE</li>
-            <li>Rapid City, SD</li>
-            <li>Sioux Falls, SD</li>
         </div>
         <div class= 'facts_st'>
-            <button id='refresh' class='buttons'>Refresh</button>
-            <br><br>
+            <!-- <button id='refresh' class='buttons'>Refresh</button>
+            <br><br>-->
             <button id="img_button" class='buttons'>Most Socioeconomically Diverse City</button>
-            <br><br>
             <div id="img_div" class='divs'></div>
+            <p></p>
             <button id="p_button" class='buttons'>Most Culturally Diverse City</button>
-            <br><br>
             <div id="p_div" class='divs'></div>
+            <p></p>
             <button id="a_button" class='buttons'>Most Economically Diverse City</button>
-            <br><br>
             <div id="a_div" class='divs'></div>
+            <p></p>
             <button id="b_button" class='buttons'>Most Household Diverse City</button>
-            <br><br>
             <div id="b_div" class='divs'></div>
+            <p></p>
             <button id="c_button" class='buttons'>Most Religiously Diverse City</button>   
-            <br><br>
             <div id="c_div" class='divs'></div>
+            <p></p>
+            <button id="d_button" class='buttons'>Best Rental Market & Affordable City</button>
+            <div id="d_div" class='divs'></div>
+            <p></p>
+            <button id="e_button" class='buttons'>City with the Best Quality of Life</button>
+            <div id="e_div" class='divs'></div>
+            <p></p>
+            <button id="f_button" class='buttons'>Most Rent Afforadable City</button>
+            <div id="f_div" class='divs'></div>
+            <p></p>
+            <button id="g_button" class='buttons'>City with the Lowest Cost of Living</button>
+            <div id="g_div" class='divs'></div>
+            <p></p>
+            <button id="h_button" class='buttons'>Safest City</button>   
+            <div id="h_div" class='divs'></div>
+            <p></p>
             <!-- <div class='divs'>
                 <div id="img_div"></div>
                 <div id="p_div"></div>
