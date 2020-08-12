@@ -32,6 +32,7 @@ function onClick(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     imgMain.appendChild(paragraph);
+    
     state += 1
     if (state >= 3){
         imgMain.innerHTML = "";
