@@ -15,27 +15,38 @@
     <!-- <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
     <title>Diverse Housing by CMS</title>
 </head>
 <body>
     <div class="tab">
         <button class="tablinks"><a href='index.html'>Main Page</a></button>
         <button class="tablinks"><a href="diverse.html">Most Diverse</a></button>
-        <button class="tablinks"><a href='renter.html'>Best Renters</a></button>
+        <button class="tablinks"><a href='rent.html'>Best Renters</a></button>
         <button class="tablinks"><a href='button.html'>Fun Facts</a></button>
     </div>
-    <div class='rent'>
+    <div id="Rent" class="tabcontent">
         <h2>Best Cities For Renters</h2>
-        <div id='rLink'>
-            <iframe src="//cdn.wallethub.com/wallethub/embed/23010/geochart-renters.html" width="325" height="275" frameBorder="0" scrolling="no"></iframe>
-            <div style="width:556px;font-size:12px;color:#888;">Source: <a href="https://wallethub.com/edu/best-cities-for-renters/23010/">WalletHub (Best Renters)</a></div>
-        </div>
-        <h3>Top 5 Cheapest Places</h3>
-        <li id = "fr">Bismarck, ND</li>
-        <li id = "sr">Lewiston, ME</li>
-        <li id = "tr">Lincoln, NE</li>
-        <li id = "for">Rapid City, SD</li>
-        <li id = "fir">Sioux Falls, SD</li>
+        <div class='rent'>
+
+            <div id='rLink'>
+                <h4>This map shows 182 cities in the United States based on renting affordability and livibility. <p></p>
+                    Hovering over the map will show the cities' rank. <p></p>
+                    The Darkest shade of blue (1) represents the best place for renters in all categories. <p></p> 
+                    The lightest shade of blue (501), represents the worst. </h4>
+                <iframe src="//cdn.wallethub.com/wallethub/embed/23010/geochart-renters.html" width="789" height="345" frameBorder="0" scrolling="no"></iframe>
+                <div style="width:556px;font-size:12px;color:#888;">Source: <a href="https://wallethub.com/edu/best-cities-for-renters/23010/">WalletHub (Best Renters)</a></div>
+            </div>
+
+            <div id='ul'>
+                <h3>Top 5 Cheapest Places</h3>
+                <li id = "fr">Bismarck, ND</li>
+                <li id = "sr">Lewiston, ME</li>
+                <li id = "tr">Lincoln, NE</li>
+                <li id = "for">Rapid City, SD</li>
+                <li id = "fir">Sioux Falls, SD</li>
+            </div>
+
         </div>
     </div>
 </body>

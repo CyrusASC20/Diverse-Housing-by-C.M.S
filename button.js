@@ -1,3 +1,5 @@
+let state = 1;
+
 let imgButton = document.getElementById('img_button');
 let imgMain = document.getElementById('img_div');
 let pButton = document.getElementById('p_button');
@@ -30,7 +32,13 @@ function onClick(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     imgMain.appendChild(paragraph);
-    setTimeout(function(){ imgMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        imgMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
+    
     }
             
 imgButton.addEventListener('click', onClick);
@@ -45,7 +53,12 @@ function onClick1(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     pMain.appendChild(paragraph);
-    setTimeout(function(){ pMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        pMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 pButton.addEventListener('click', onClick1);
@@ -59,7 +72,12 @@ function onClick2(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     aMain.appendChild(paragraph);
-    setTimeout(function(){ aMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        aMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 aButton.addEventListener('click', onClick2);
@@ -73,7 +91,12 @@ function onClick3(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     bMain.appendChild(paragraph);
-    setTimeout(function(){ bMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        bMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 bButton.addEventListener('click', onClick3);
@@ -87,7 +110,12 @@ function onClick4(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     cMain.appendChild(paragraph);
-    setTimeout(function(){ cMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        cMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 cButton.addEventListener('click', onClick4);
@@ -101,7 +129,12 @@ function onClick5(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     dMain.appendChild(paragraph);
-    setTimeout(function(){ dMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        dMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 dButton.addEventListener('click', onClick5);
@@ -115,7 +148,12 @@ function onClick6(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     eMain.appendChild(paragraph);
-    setTimeout(function(){ eMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        eMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 eButton.addEventListener('click', onClick6);
@@ -129,7 +167,12 @@ function onClick7(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     fMain.appendChild(paragraph);
-    setTimeout(function(){ fMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        fMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 fButton.addEventListener('click', onClick7);
@@ -143,7 +186,12 @@ function onClick8(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     gMain.appendChild(paragraph);
-    setTimeout(function(){ gMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        gMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 gButton.addEventListener('click', onClick8);
@@ -157,7 +205,12 @@ function onClick9(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     hMain.appendChild(paragraph);
-    setTimeout(function(){ hMain.innerHTML = "";}, 5000);
+    state += 1
+    if (state >= 3){
+        hMain.innerHTML = "";
+        //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
+        state = 1
+    }
 }
 
 hButton.addEventListener('click', onClick9)
