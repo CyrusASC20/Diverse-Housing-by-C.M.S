@@ -1,4 +1,8 @@
 let state = 1;
+let state2 = 1;
+let state3 = 1;
+let state4 = 1;
+let state5 = 1;
 
 let fRent = document.getElementById('fr');
 let sRent = document.getElementById('sr');
@@ -19,44 +23,44 @@ fRent.addEventListener('click', onClick16);
 
 function onClick17(){
     sRent.innerHTML = "Best Place to Rent Score: 57.98 out of 100";
-    state += 1
-    if (state >= 3){
+    state2 += 1
+    if (state2 >= 3){
         sRent.innerHTML = "Lewiston, ME";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state2 = 1
     }
 }
 sRent.addEventListener('click', onClick17);
 
 function onClick18(){
     tRent.innerHTML = "Best Place to Rent Score: 57.70 out of 100";
-    state += 1
-    if (state >= 3){
+    state3 += 1
+    if (state3 >= 3){
         tRent.innerHTML = "Lincoln, NE";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state3 = 1
     }
 }
 tRent.addEventListener('click', onClick18);
 
 function onClick19(){
     foRent.innerHTML = "Best Place to Rent Score: 56.89 out of 100";
-    state += 1
-    if (state >= 3){
+    state4 += 1
+    if (state4 >= 3){
         foRent.innerHTML = "Rapid City, SD";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state4 = 1
     }
 }
 foRent.addEventListener('click', onClick19);
 
 function onClick20(){
     fiRent.innerHTML = "Best Place to Rent Score: 56.81 out of 100";
-    state += 1
-    if (state >= 3){
+    state5 += 1
+    if (state5 >= 3){
         fiRent.innerHTML = "Sioux Falls, SD";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state5 = 1
     }
 }
 fiRent.addEventListener('click', onClick20);

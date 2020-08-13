@@ -1,4 +1,8 @@
 let state = 1;
+let state2 = 1;
+let state3 = 1;
+let state4 = 1;
+let state5 = 1;
 
 let fDiverse = document.getElementById('fd');
 let sDiverse = document.getElementById('sd');
@@ -32,11 +36,11 @@ sDiverse.addEventListener('click', onClick12);
 
 function onClick13(){
     tDiverse.innerHTML = "Diversity Score: 71.47 out of 100";
-    state += 1
-    if (state >= 3){
+    state2 += 1
+    if (state2 >= 3){
         tDiverse.innerHTML = "New York, NY";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state2 = 1
     }
 
 }
@@ -44,11 +48,11 @@ tDiverse.addEventListener('click', onClick13);
 
 function onClick14(){
     foDiverse.innerHTML = "Diversity Score: 71.23 out of 100";
-    state += 1
-    if (state >= 3){
+    state3 += 1
+    if (state3 >= 3){
         foDiverse.innerHTML = "Gaithersburg, MD";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state3 = 1
     }
 
 }
@@ -56,11 +60,11 @@ foDiverse.addEventListener('click', onClick14);
 
 function onClick15(){
     fiDiverse.innerHTML = "Diversity Score: 71.12 out of 100";
-    state += 1
-    if (state >= 3){
+    state4 += 1
+    if (state4 >= 3){
         fiDiverse.innerHTML = "Dallas, TX";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state4 = 1
     }
 
 }

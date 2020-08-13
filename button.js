@@ -1,4 +1,13 @@
 let state = 1;
+let state2 = 1;
+let state3 = 1;
+let state4 = 1;
+let state5 = 1;
+let state6 = 1;
+let state7 = 1;
+let state8 = 1;
+let state9 = 1;
+
 
 let imgButton = document.getElementById('img_button');
 let imgMain = document.getElementById('img_div');
@@ -54,11 +63,11 @@ function onClick1(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     pMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state2 += 1
+    if (state2 >= 3){
         pMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state2d = 1
     }
 }
 
@@ -73,11 +82,11 @@ function onClick2(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     aMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state3 += 1
+    if (state3 >= 3){
         aMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state3 = 1
     }
 }
 
@@ -92,11 +101,11 @@ function onClick3(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     bMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state4 += 1
+    if (state4 >= 3){
         bMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state4 = 1
     }
 }
 
@@ -111,11 +120,11 @@ function onClick4(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     cMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state5 += 1
+    if (state5 >= 3){
         cMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state5 = 1
     }
 }
 
@@ -130,11 +139,11 @@ function onClick5(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     dMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state6 += 1
+    if (state6 >= 3){
         dMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state6 = 1
     }
 }
 
@@ -149,11 +158,11 @@ function onClick6(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     eMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state7 += 1
+    if (state7 >= 3){
         eMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state7 = 1
     }
 }
 
@@ -187,11 +196,11 @@ function onClick8(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     gMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state8 += 1
+    if (state8 >= 3){
         gMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state8 = 1
     }
 }
 
@@ -206,11 +215,11 @@ function onClick9(){
     paragraph.style.padding = "10px"
     paragraph.style.borderRadius = "10px"
     hMain.appendChild(paragraph);
-    state += 1
-    if (state >= 3){
+    state9 += 1
+    if (state9 >= 3){
         hMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state = 1
+        state9 = 1
     }
 }
 
