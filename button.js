@@ -67,7 +67,7 @@ function onClick1(){
     if (state2 >= 3){
         pMain.innerHTML = "";
         //setTimeout(function(){ imgMain.innerHTML = "";}, 3000);
-        state2d = 1
+        state2 = 1
     }
 }
 
